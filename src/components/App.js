@@ -47,7 +47,7 @@ class App extends Component {
         <Posts title="Tseries" subs={tserSubs}></Posts>
         <Posts title="Pewdiepie" subs={pewdSubs}></Posts>
         <Posts title="Difference" subs={pewdSubs - tserSubs}></Posts>
-        
+        <Spinner />
       </div>
     );
   }
