@@ -4,7 +4,7 @@ import './Posts.css';
 const Posts = (props) => {
   return(
     <div className="post">
-      <h1>{props.title} Subscriber</h1>
+      <h1>{props.title}</h1>
       <p><b>{props.subs}</b></p>
     </div>
   );

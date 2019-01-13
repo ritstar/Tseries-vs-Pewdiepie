@@ -44,9 +44,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Posts title="Tseries" subs={tserSubs}></Posts>
-        <Posts title="Pewdiepie" subs={pewdSubs}></Posts>
-        <Posts title="Difference" subs={pewdSubs - tserSubs}></Posts>
+        <Posts title="Tseries subscribers" subs={tserSubs}></Posts>
+        <Posts title="Pewdiepie subscribers" subs={pewdSubs}></Posts>
+        <Posts title="Difference between both" subs={pewdSubs - tserSubs}></Posts>
         <Spinner />
       </div>
     );
