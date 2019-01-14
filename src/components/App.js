@@ -12,8 +12,8 @@ class App extends Component {
     componentDidMount(){
 
       
-      const urlT = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=tseries&fields=items/statistics/subscriberCount&key=AIzaSyCcaGTIHATCiPmaiX6gGA6yp8KfHkejTsM';
-      const urlP = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=pewdiepie&fields=items/statistics/subscriberCount&key=AIzaSyCcaGTIHATCiPmaiX6gGA6yp8KfHkejTsM';
+      const urlT = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=tseries&fields=items/statistics/subscriberCount&key='+process.env.REACT_APP_YouTube_API_KEY;
+      const urlP = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=pewdiepie&fields=items/statistics/subscriberCount&key='+process.env.REACT_APP_YouTube_API_KEY;
     
       setInterval(()=>{
         axios.get(urlT).then(
@@ -48,6 +48,7 @@ class App extends Component {
         <Posts title="Pewdiepie subscribers" subs={pewdSubs}></Posts>
         <Posts title="Difference between both" subs={pewdSubs - tserSubs}></Posts>
         <Spinner />
+        
       </div>
     );
   }
