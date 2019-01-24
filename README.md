@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## This is an React web application which show Yuutube subscriber counter between Tseries and Pewdiepie.
+## This is an React web application which show Youtube subscriber counter between Tseries and Pewdiepie.
 
 ## Available Scripts
 
